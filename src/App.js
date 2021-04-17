@@ -1,6 +1,6 @@
 import './style/App.scss';
 import Home from './Home.js'
-import About from './About.js';
+import History from './History.js';
 import Menu from './Menu.js';
 import Gallery from './Gallery.js';
 import Contact from './Contact';
@@ -13,21 +13,23 @@ function App() {
     <div className="App">
       <header className="header">
         <h1> My Restaurant</h1>
-        <nav>
-          <ul className="sideMenuContainer">
-            <li><Link exact to = "/home">Home</Link></li>
-            <li><Link exact to = "/menu">Menu</Link></li>
-            <li><Link exact to = "/about">About</Link></li>
-            <li><Link exact to = "/gallery">Gallery</Link></li>
-            <li><Link exact to = "/contact&reservation">Contact & Reservations</Link></li>
-          </ul>
-        </nav>
-        <nav>
-        <ul className="socialContainer">
-            <li>INSTAGRAM LINK</li>
-            <li>FACEBOOK LINK</li>
-          </ul>
-        </nav>
+        <div className="navContainer">
+          <nav>
+            <ul className="sideMenuContainer">
+              <li><Link exact to = "/home">Home</Link></li>
+              <li><Link exact to = "/menu">Menu</Link></li>
+              <li><Link exact to = "/history">History</Link></li>
+              <li><Link exact to = "/gallery">Gallery</Link></li>
+              <li><Link exact to = "/contact&reservation">Contact & Reservations</Link></li>
+            </ul>
+          </nav>
+          <nav>
+          <ul className="socialContainer">
+              <li>INSTAGRAM LINK</li>
+              <li>FACEBOOK LINK</li>
+            </ul>
+          </nav>
+        </div>
       </header>
       <Route
         path="/home"
@@ -40,8 +42,8 @@ function App() {
       />
       
       <Route
-        path="/about"
-        component={About}
+        path="/history"
+        component={History}
       />
 
       <Route

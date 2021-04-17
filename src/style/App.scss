@@ -16,14 +16,14 @@
                content: ''; 
                background-image: url(../assets/side-menu.jpg);
                background-size:cover;
-               // opacity: 0.9;
+               opacity: 0.9;
                top: 0;
                left: 0;
                bottom: 0;
                right: 0;
                position: absolute;
                z-index: -1;
-               // filter: blur(1px);
+               // filter: blur(2px);
           }
           h1{
                font-size: 2rem;
@@ -32,46 +32,145 @@
                text-align: center;
                margin: 0;
           }
-
-          nav{
+          .navContainer{
                display:flex;
                flex-direction: column;
-               justify-content: space-between;
-               .sideMenuContainer{
-                    li{  
-                         list-style: none;
-                         @include fontAbel;
-                         font-size: 1rem;
-                         a{
-                              color: white;
-                              text-decoration: none;
-     
-                              &:hover{
-                                   border-bottom: 2px solid $gold;
+               justify-content: space-around;
+               height: 100%;
+               nav{
+                    .sideMenuContainer{
+                         li{  
+                              list-style: none;
+                              @include fontAbel;
+                              a{
+                                   color: white;
+                                   text-decoration:
+                                    none;
+                                   font-size: 1.5rem;
+
+                                   &:hover{
+                                        text-decoration: underline solid 2px $gold;
+                                        transition-duration: 0.5s;
+                                   }
                               }
                          }
                     }
+          
+                    .socialContainer{
+                         display: flex;
+                         li{
+                              list-style: none;
+                              @include fontAbel;
+                              color: white;
+                              font-size: 1rem;
+                         }
+                    }
                }
+          }
+
+     }
      
-               .socialContainer{
-                    display: flex;
+     .homeContainer, .menuContainer, .historyContainer, .galleryContainer, .contactContainer {
+          background-color: $richBlack;
+          width: 100%;
+          height: 100vh;
+     }
+
+     .menuContainer{
+          .kitchenBanner{
+               img{
+                    overflow:hidden;
+                    height: 25vh;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: 10% 30%;
+                    border-bottom: solid 3px $gold;
+               }    
+          }
+          .entireMenuContainer{
+               display:flex;
+               flex-wrap: wrap;
+               justify-content: space-evenly;
+
+               .appetizerSection , .skewerSection, .riceSection, .noodleSection, .drinkSection, .dessertSection {
+                    margin: 0 20px;
+               }
+
+               h1{
+                    font-size: 1.5rem;
+                    @include fontBaskerville;
+                    color: white;
+                    text-decoration: underline solid $gold 2px;
+               }
+
+               h2{
+                    color: $gold;
+                    font-size: 1.5rem;
+                    @include fontAbel;
+                    margin: 0;
+               }
+
+               p{
+                    font-size: 1rem;
+                    @include fontAbel;
+                    color: white;
+                    margin: 0;
+               }
+
+               ul{
+                    padding: 0;
                     li{
                          list-style: none;
                          @include fontAbel;
-                         color: white;
                          font-size: 1rem;
+                         color: white;
                     }
                }
           }
      }
      
-     .homeContainer, .menuContainer, .aboutContainer, .galleryContainer, .contactContainer {
-          display:flex;
-          justify-content: center;
-          background-color: $richBlack;
-     }
-     
+     .historyContainer{
+          h1{
+               @include fontBaskerville;
+               font-size: 1.5rem;
+               color: white;
+               text-align: center;
+               text-decoration: underline 2px solid $gold;
+          }
 
+          .storyContainer{
+               width: 50%;
+               height: auto;
+               margin: 0 auto;
+               padding: 20px;
+               background-color: $gold;
+               h2{
+                    @include fontBaskerville;
+                    font-size: 1rem;
+                    color: white;
+               }
+
+               p{
+                    font-size: 1rem;
+                    @include fontAbel;
+                    color: white;
+               }
+          }
+
+          .restaurantBanner{
+               position: relative;
+               img{
+                    overflow:hidden;
+                    height: 40vh;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: 10% 30%;
+                    border-top: solid 3px $gold;
+                    position: absolute;
+                    top: 59.55vh;
+               }
+          }
+     }
 
 }
 
