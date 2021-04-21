@@ -3,7 +3,7 @@
 const Contact = () => {
      return(
           <section class = "contactContainer">
-               <p>Contact and reservations</p>
+               <h1>Contact & Reservation</h1>
           </section>
      )
 }

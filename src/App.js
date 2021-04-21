@@ -35,7 +35,7 @@ function App() {
         path="/home"
         component={Home}
       />
-
+      
       <Route
         path="/menu"
         component={Menu}
