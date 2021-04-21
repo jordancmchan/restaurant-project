@@ -1,0 +1,77 @@
+@import 'mixin'; 
+
+.App{
+     font-size: 62.5%; 
+     display: grid;
+     grid-template-columns: 25% auto;
+
+     .header{
+          display:flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100vh;
+          position: sticky;
+          z-index: 9999;
+          &:after{
+               content: ''; 
+               background-image: url(../assets/side-menu.jpg);
+               background-size:cover;
+               // opacity: 0.9;
+               top: 0;
+               left: 0;
+               bottom: 0;
+               right: 0;
+               position: absolute;
+               z-index: -1;
+               // filter: blur(1px);
+          }
+          h1{
+               font-size: 2rem;
+               @include fontBaskerville;
+               color: white;
+               text-align: center;
+               margin: 0;
+          }
+
+          nav{
+               display:flex;
+               flex-direction: column;
+               justify-content: space-between;
+               .sideMenuContainer{
+                    li{  
+                         list-style: none;
+                         @include fontAbel;
+                         font-size: 1rem;
+                         a{
+                              color: white;
+                              text-decoration: none;
+     
+                              &:hover{
+                                   border-bottom: 2px solid $gold;
+                              }
+                         }
+                    }
+               }
+     
+               .socialContainer{
+                    display: flex;
+                    li{
+                         list-style: none;
+                         @include fontAbel;
+                         color: white;
+                         font-size: 1rem;
+                    }
+               }
+          }
+     }
+     
+     .homeContainer, .menuContainer, .aboutContainer, .galleryContainer, .contactContainer {
+          display:flex;
+          justify-content: center;
+          background-color: $richBlack;
+     }
+     
+
+
+}
+

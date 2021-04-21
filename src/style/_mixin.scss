@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Libre+Baskerville&display=swap');
+
+$gold: #8D5A02;
+$richBlack: #073439;
+
+@mixin fontBaskerville {
+     font-family: 'Libre Baskerville', serif;
+}
+
+@mixin fontAbel {
+     font-family: 'Abel', sans-serif;
+}
