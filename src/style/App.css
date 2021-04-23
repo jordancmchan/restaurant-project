@@ -107,7 +107,7 @@
       grid-template-rows: 1fr 1fr;
   height: 60vh;
   margin: 0 auto;
-  background-color: #073439;
+  width: 100%;
 }
 
 .App .menuContainer .entireMenuContainer .drinkSection,
@@ -115,6 +115,7 @@
   position: relative;
   left: 500px;
   bottom: 175px;
+  text-align: right;
 }
 
 .App .menuContainer .entireMenuContainer h1 {

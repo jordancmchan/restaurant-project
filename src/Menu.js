@@ -7,7 +7,7 @@ const Menu = () => {
                <div className ="kitchenBanner">
                     <img src={kitchen} alt="restaurant kitchen"/>
                </div>
-               <div className="entireMenuContainer wrapper">
+               <div className="entireMenuContainer" >
                     <div className="appetizerSection">
                          <h1>Appetizer</h1>
                          <div className="app">
