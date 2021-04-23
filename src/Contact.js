@@ -2,7 +2,7 @@
 
 const Contact = () => {
      return(
-          <section class = "contactContainer">
+          <section className = "contactContainer">
                <h1>Contact & Reservation</h1>
           </section>
      )

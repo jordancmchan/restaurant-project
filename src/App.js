@@ -14,33 +14,31 @@ function App() {
       <header className="header">
         <h1> My Restaurant</h1>
         <div className="navContainer">
-          <nav>
             <ul className="sideMenuContainer">
-              <li><Link exact to = "/home">Home</Link></li>
-              <li><Link exact to = "/menu">Menu</Link></li>
-              <li><Link exact to = "/history">History</Link></li>
-              <li><Link exact to = "/gallery">Gallery</Link></li>
-              <li><Link exact to = "/contact&reservation">Contact & Reservations</Link></li>
-            </ul>
-          </nav>
-          <nav>
-          <ul className="socialContainer">
+              <li>HOME</li>
+              <li>MENU</li>
+              <li>HISTORY</li>
+              <li>GALLERY</li>
+              <li>CONTACT & RESERVATIONS</li>
               <li>INSTAGRAM LINK</li>
               <li>FACEBOOK LINK</li>
             </ul>
-          </nav>
         </div>
       </header>
+      <Menu />
+      <Gallery />
+      <History />
+      <Contact />
       <Route
         path="/home"
         component={Home}
       />
-      
+{/*     
       <Route
         path="/menu"
         component={Menu}
       />
-      
+
       <Route
         path="/history"
         component={History}
@@ -54,10 +52,7 @@ function App() {
       <Route
         path="/contact&reservation"
         component={Contact}
-      />
-      
-      <footer className="footer">
-      </footer>
+      /> */}
     </div>
     </Router>
   )

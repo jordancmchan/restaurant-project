@@ -3,7 +3,7 @@ import historypage from './assets/history-page.jpg'
 
 const History = () => {
      return(
-          <section class="historyContainer">
+          <section className="historyContainer">
                <div className="restaurantBanner">
                     <img src={historypage} alt="restaurant stock photo"/>
                </div>
