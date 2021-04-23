@@ -3,7 +3,6 @@ import Home from './Home.js'
 import History from './History.js';
 import Menu from './Menu.js';
 import Gallery from './Gallery.js';
-import Contact from './Contact';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 
@@ -19,16 +18,15 @@ function App() {
               <li>MENU</li>
               <li>HISTORY</li>
               <li>GALLERY</li>
-              <li>CONTACT & RESERVATIONS</li>
               <li>INSTAGRAM LINK</li>
               <li>FACEBOOK LINK</li>
             </ul>
         </div>
       </header>
+      <Home />
       <Menu />
-      <Gallery />
       <History />
-      <Contact />
+      <Gallery />
       <Route
         path="/home"
         component={Home}

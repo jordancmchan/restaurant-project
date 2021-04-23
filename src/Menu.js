@@ -7,33 +7,33 @@ const Menu = () => {
                <div className ="kitchenBanner">
                     <img src={kitchen} alt="restaurant kitchen"/>
                </div>
-               <div className="entireMenuContainer" >
+               <div className="entireMenuContainer wrapper" >
                     <div className="appetizerSection">
                          <h1>Appetizer</h1>
                          <div className="app">
                               <h2>Karaage </h2>
                               <p>ingredient list</p>
-                              <p>$10.00</p>
+                              <p className="price">$10.00</p>
                          </div>
                          <div className="app">
                               <h2>Cabbage Salad</h2>
                               <p>ingredient list</p>
-                              <p>$10.00</p>
+                              <p className="price">$10.00</p>
                          </div>
                          <div className="app">
                               <h2>Edamame</h2>
                               <p>ingredient list</p>
-                              <p>$10.00</p>
+                              <p className="price">$10.00</p>
                          </div>
                          <div className="app">
                               <h2>Pot Stickers</h2>
                               <p>ingredient list</p>
-                              <p>$10.00</p>
+                              <p className="price">$10.00</p>
                          </div>
                          <div className="app">
                               <h2>Braised Chicken Wings</h2>
                               <p>ingredient list</p>
-                              <p>$10.00</p>
+                              <p className="price">$10.00</p>
                          </div>
                          
                     </div>
@@ -47,17 +47,17 @@ const Menu = () => {
                                    <li>bbq duck</li>
                               </ul>
                               <p>ingredient list</p>
-                              <p>$10.00</p>
+                              <p className="price">$10.00</p>
                          </div>
                          <div className="rice">
                               <h2>Unagi Rice</h2>
                               <p>ingredient list</p>
-                              <p>$10.00</p>
+                              <p className="price">$10.00</p>
                          </div>
                          <div className="rice">
                               <h2>Kimchi Fried Rice</h2>
                               <p>ingredient list</p>
-                              <p>$10.00</p>
+                              <p className="price">$10.00</p>
                          </div>
                     </div>
                     <div className="noodleSection">
@@ -65,13 +65,13 @@ const Menu = () => {
                          <div className="noodle">
                               <h2>Kimchi Udon</h2>
                               <p>ingredient list</p>
-                              <p>$10.00</p>
+                              <p className="price">$10.00</p>
                          </div>
                          <div className="noodle">
                               <h2>Instant Shin Ramen</h2>
                               <p>ingredient list</p>
+                              <p className="price">$10.00</p>
                          </div>
-                         <p>$10.00</p>
                     </div>
                     <div className="skewerSection">
                          <h1>Skewers</h1>
@@ -83,7 +83,7 @@ const Menu = () => {
                               <li>Mushrooms</li>
                               <li>Chicken Gizzards</li>
                          </ul>
-                         <p>$3.50 each</p>
+                         <p className="price">$3.50 each</p>
                     </div>
                     <div className="drinkSection">
                          <h1>Drinks & Cocktails</h1>
@@ -93,17 +93,19 @@ const Menu = () => {
                               <li>Cocktails</li>
                               <li>Pop</li>
                          </ul>
-                         <p>$10.00</p>
+                         <p className="price">$10.00</p>
                     </div>
                     <div className="dessertSection">
                          <h1>Dessert</h1>
                          <div className="dessert">
                               <h2>Cake</h2>
                               <p>ingredient list</p>
+                              <p className="price">$10.00</p>
                          </div>
                          <div className="dessert">
                               <h2>Cake</h2>
                               <p>ingredient list</p>
+                              <p className="price">$10.00</p>
                          </div>
                     </div>
                </div>
