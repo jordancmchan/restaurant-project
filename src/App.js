@@ -4,6 +4,7 @@ import History from './History.js';
 import Menu from './Menu.js';
 import Gallery from './Gallery.js';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import Fan from './assets/Fan.png'
 
 
 function App() {
@@ -11,26 +12,16 @@ function App() {
     <Router>
     <div className="App">
       <header className="header">
-        <h1> My Restaurant</h1>
-        <div className="navContainer">
-            <ul className="sideMenuContainer">
-              <li>HOME</li>
-              <li>MENU</li>
-              <li>HISTORY</li>
-              <li>GALLERY</li>
-              <li>INSTAGRAM LINK</li>
-              <li>FACEBOOK LINK</li>
-            </ul>
-        </div>
+        <img src={Fan} alt="fan"/>
+
       </header>
       <Home />
       <Menu />
       <History />
-      <Gallery />
-      <Route
+      {/* <Route
         path="/home"
         component={Home}
-      />
+      /> */}
 {/*     
       <Route
         path="/menu"
