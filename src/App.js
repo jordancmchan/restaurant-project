@@ -2,7 +2,7 @@ import './style/App.scss';
 import Home from './Home.js'
 import History from './History.js';
 import Menu from './Menu.js';
-import Gallery from './Gallery.js';
+import Gallery from './Gallery.js'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Fan from './assets/Fan.png'
 
@@ -13,37 +13,13 @@ function App() {
     <div className="App">
       <header className="header">
         <img src={Fan} alt="fan"/>
-
       </header>
       <Home />
       <Menu />
       <History />
-      {/* <Route
-        path="/home"
-        component={Home}
-      /> */}
-{/*     
-      <Route
-        path="/menu"
-        component={Menu}
-      />
-
-      <Route
-        path="/history"
-        component={History}
-      />
-
-      <Route
-        path="/gallery"
-        component={Gallery}
-      />
-
-      <Route
-        path="/contact&reservation"
-        component={Contact}
-      /> */}
     </div>
     </Router>
+    
   )
 }
 

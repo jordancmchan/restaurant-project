@@ -1,5 +1,8 @@
 //Menu.js
 import kitchen from './assets/kitchen.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPepperHot } from "@fortawesome/free-solid-svg-icons";
+import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 
 const Menu = () => {
      return(
@@ -12,17 +15,17 @@ const Menu = () => {
                     <div className="appetizerSection">
                          <h1>APPETIZER</h1>
                          <div className="app">
-                              <h2>Karaage </h2>
+                              <h2>Karaage</h2>
                               <p>ingredient • ingredient • ingredient</p>
                               <p className="price">$10.00</p>
                          </div>
                          <div className="app">
-                              <h2>Cabbage Salad</h2>
+                              <h2>Cabbage Salad<span><FontAwesomeIcon icon={faLeaf}/></span></h2>
                               <p>ingredient • ingredient • ingredient ingredient • ingredient • ingredient</p>
                               <p className="price">$10.00</p>
                          </div>
                          <div className="app">
-                              <h2>Edamame</h2>
+                              <h2>Edamame<span><FontAwesomeIcon icon={faLeaf}/></span></h2>
                               <p>ingredient • ingredient • ingredient</p>
                               <p className="price">$10.00</p>
                          </div>
@@ -52,24 +55,24 @@ const Menu = () => {
                          </div>
                          <div className="rice">
                               <h2>Unagi Rice</h2>
-                              <p>ingredient list</p>
+                              <p>ingredient list • ingredient</p>
                               <p className="price">$10.00</p>
                          </div>
                          <div className="rice">
-                              <h2>Kimchi Fried Rice</h2>
-                              <p>ingredient list</p>
+                              <h2>Kimchi Fried Rice <span><FontAwesomeIcon icon={faPepperHot}/></span></h2>
+                              <p>ingredient list • ingredient • ingredient</p>
                               <p className="price">$10.00</p>
                          </div>
                     </div>
                     <div className="noodleSection">
                          <h1>NOODLES</h1>
                          <div className="noodle">
-                              <h2>Kimchi Udon</h2>
+                              <h2>Kimchi Udon<span><FontAwesomeIcon icon={faPepperHot}/></span></h2>
                               <p>ingredient • ingredient</p>
                               <p className="price">$10.00</p>
                          </div>
                          <div className="noodle">
-                              <h2>Instant Shin Ramen</h2>
+                              <h2>Instant Shin Ramen<span><FontAwesomeIcon icon={faPepperHot}/></span></h2>
                               <p>ingredient • ingredient</p>
                               <p className="price">$10.00</p>
                          </div>
