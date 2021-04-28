@@ -1,14 +1,15 @@
 //Home.js
 import reservationBanner from './assets/reservationBanner.jpg'
 import galleryTitle from './assets/galleryTitle.jpg'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
      return(
                <section className="homeContainer">
                          <div className="mainTitleContainer">
-                              <div className="mainTitle">
-                                   <h1>The Golden Fan</h1>
+                              <div className="mainTitle wrapper">
+                                   <h1>Hungry J</h1>
+                                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis aliquid rerum velit possimus facilis architecto nemo ullam! Est alias, rem soluta quia quos iure eius, non voluptate ut at repudiandae?</p>
                               </div>
                          </div>
                          <div className="contactGalleryContainer">
