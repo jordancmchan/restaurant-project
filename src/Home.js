@@ -14,7 +14,7 @@ const Home = () => {
                                    <img src={titleImage} alt=""/>
                               </div>
                               <div className="mainTitle">
-                                   <h1>the Hungry Hippo<FontAwesomeIcon icon={faHippo}/></h1>
+                                   <h1>the Hungry Hippo <FontAwesomeIcon icon={faHippo}/></h1>
                                    <p>Welcome to Hungry Hippo! Inspired by eating good and all the restaurants in Toronto</p>
                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro omnis iusto nobis consequuntur repellendus perspiciatis expedita aliquid delectus velit excepturi rem error quam esse ipsum sapiente, aspernatur eaque atque unde veniam placeat modi. Odit adipisci voluptatum reprehenderit architecto quidem dolore doloribus laborum. Itaque, quidem culpa recusandae in consequatur quasi provident magni eius reprehenderit labore corporis et deserunt, sunt amet eaque!</p>
                                    <FontAwesomeIcon icon={faSortDown} className="downArrow"/>
