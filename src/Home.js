@@ -11,10 +11,11 @@ const Home = () => {
                               <h1>The Golden Fan</h1>
                               <img src={reservationBanner} alt=""/>
                          </div>
+                    
                          <div className="reservationContainer">
                               <img src={reservationBanner} alt="restaurant photo"/>
                          </div>
-                         <div className="galleryContainer">
+                         <div className="galleryTitleContainer">
                               <img src={reservationBanner} alt=""/>
                          </div>
                     </div>
