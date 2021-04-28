@@ -10,14 +10,11 @@ import Fan from './assets/Fan.png'
 function App() {
   return (
     <Router>
-    <div className="App">
-      <header className="header">
-        <img src={Fan} alt="fan"/>
-      </header>
-      <Home />
-      <Menu />
-      <History />
-    </div>
+      <div className="App">
+        <Home />
+        <Menu />
+        <History />
+      </div>
     </Router>
     
   )

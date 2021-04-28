@@ -7,8 +7,9 @@ const Home = () => {
      return(
                <section className="homeContainer">
                          <div className="mainTitleContainer">
-                              <h1>The Golden Fan</h1>
-                              {/* <img src={reservationBanner} alt=""/> */}
+                              <div className="mainTitle">
+                                   <h1>The Golden Fan</h1>
+                              </div>
                          </div>
                          <div className="contactGalleryContainer">
                               <div className="reservationContainer">
