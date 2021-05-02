@@ -87,7 +87,7 @@ const Menu = () => {
                               <li>Mushrooms</li>
                               <li>Chicken Gizzards</li>
                          </ul>
-                         <p className="price">$3.50 each</p>
+                         <p className="price app">$3.50 each</p>
                     </div>
                     <div className="drinkSection">
                          <h1>DRINKS & COCKTAILS</h1>
@@ -97,7 +97,7 @@ const Menu = () => {
                               <li>Cocktails</li>
                               <li>Pop</li>
                          </ul>
-                         <p className="price">$10.00</p>
+                         <p className="price dessert">$10.00</p>
                     </div>
                     <div className="dessertSection">
                          <h1>DESSERT</h1>

@@ -4,7 +4,7 @@ import historypage from './assets/history-page.jpg'
 const History = () => {
      return(
           <section className="historyContainer">
-               <h1>"People who love to eat are always the best people."<span>-Julia Child</span></h1>
+               <h1>"People who love to eat are always the best people." <span>-Julia Child</span></h1>
                <div className="missionContainer wrapper">
                     <div className="storyContainer">
                          <h2>the Hungry Hippo</h2>

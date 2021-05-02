@@ -1,0 +1,42 @@
+.contactModal{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(7, 52, 57, 0.7);
+    z-index: 9999;
+
+    .contactModalContent{
+        width: 500px;
+        background-color: white;
+        padding: 10px;
+        .contactModalHeader{
+
+            h4{
+                @include fontBaskerville;
+                font-size: 1.5rem;
+                color: $richBlack;
+                margin: 0;
+            }
+        }
+
+        .contactModalBody{
+            border-bottom: 2px solid $gold;
+            border-top: 2px  solid $gold;
+
+            p{
+                font-size: 1rem;
+                @include fontAbel;
+                color: black;
+            }
+        }
+
+    }
+
+
+
+}

@@ -1,0 +1,148 @@
+@media (max-width: 1245px){
+
+    .App {
+        .menuContainer{
+            max-height: 140vh;
+
+            .entireMenuContainer{
+                .dessertSection, .drinkSection{
+                    left: 400px;
+                    bottom: 70px;
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        
+        
+    }
+}
+
+@media (max-width: 1030px) {
+    .App{
+
+        .menuContainer{
+            max-height: 140vh;
+
+            .entireMenuContainer{
+                .dessertSection, .drinkSection{
+                    left: 350px;
+                }
+            }
+        }
+
+        .historyContainer{
+
+            .missionContainer{
+                flex-direction:column-reverse;
+
+                .restaurantBanner{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 940px){
+
+    .App {
+
+        .homeContainer{
+            .mainTitleContainer{
+                .titleImageContainer{
+                    max-width: 100%;
+                    img{
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .menuContainer{
+            max-height: 140vh;
+
+            .wrapper{
+                max-width: 100%;
+            }
+
+            .entireMenuContainer{
+
+                .appetizerSection,
+                .riceSection,
+                .noodleSection,
+                .skewerSection{
+                    justify-self: stretch;
+
+                }
+                
+                .dessertSection, .drinkSection{
+                    left: 350px;
+                    bottom: 70px;
+                    margin-right: 20px;
+
+                }
+            }
+        }
+
+        
+        
+        
+    }
+}
+
+@media (max-width: 768px){
+    .App{
+
+        .homeContainer{
+
+            .mainTitleContainer{
+                flex-direction: column;
+                justify-content: flex-start;
+                .titleImageContainer{
+                    img{
+                        display: none;
+                    }
+                }   
+
+            }
+            
+        }
+
+        .historyContainer{
+            h1{
+                span{
+                    position:static;
+                }
+            }
+        }
+
+        .menuContainer{
+            .entireMenuContainer{
+                padding: 0;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                .skewerSection{
+                    height: 250px;
+                }
+                .dessertSection, .drinkSection{
+                    position: static;
+                    box-shadow: none;
+                    margin: 0;
+                    justify-self: stretch;
+                    text-align: left;
+                    background-color: rgb(7, 52, 57, 0.7);
+                    width: inherit;
+                    h1{
+                        border-bottom: 2px solid $gold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px){
+
+}
