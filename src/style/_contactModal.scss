@@ -13,25 +13,68 @@
     .contactModalContent{
         width: 500px;
         background-color: white;
-        padding: 10px;
-        .contactModalHeader{
-
+        padding: 20px;
+        .contactModalHeader{    
+            display:flex;
+            justify-content: space-between;
             h4{
                 @include fontBaskerville;
                 font-size: 1.5rem;
                 color: $richBlack;
                 margin: 0;
             }
+
+            .closeIcon{
+                font-size: 1.3rem;
+                color: $gold;
+                cursor: pointer;
+            }
         }
 
         .contactModalBody{
             border-bottom: 2px solid $gold;
             border-top: 2px  solid $gold;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: 1fr;
+            justify-items: center;
 
-            p{
-                font-size: 1rem;
-                @include fontAbel;
-                color: black;
+            .hours{
+                display:grid;
+                grid-template-columns: 60px 50px 50px;
+                // grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 40px 40px 40px;
+                column-gap: 15px;
+                row-gap: 15px;
+                justify-items: start;
+                p{
+                    font-size: 1rem;
+                    @include fontAbel;
+                    color: black;
+                }
+            }
+
+            .mapContainer{
+                height: 120%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 80%;
+                    height: auto;
+                    border: 2px solid $gold;
+                }
+            }
+
+            .addressNumber{
+                width: 100%;
+                display:flex;
+                justify-content:space-between;
+                p{
+                    @include fontAbel;
+                    font-size: 1rem;
+                    color: $richBlack;
+                }
             }
         }
 

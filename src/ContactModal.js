@@ -1,5 +1,10 @@
 import contactMap from './assets/contactMap.jpg'
-const ContactModal = () => {
+import {faTimes} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
+
+const ContactModal = (props) => {
     return(
         <div className="contactModal">
             <div className="contactModalContent">
@@ -7,6 +12,7 @@ const ContactModal = () => {
                     <h4 className="contactModalTitle">
                         Contact & Hours
                     </h4>
+                    <FontAwesomeIcon icon={faTimes} className="closeIcon" onClick={props.onClose}/>
                 </div>
                 <div className="contactModalBody">
                     <div className="hours">
@@ -21,12 +27,10 @@ const ContactModal = () => {
                     <div className="mapContainer">
                         <img src={contactMap} alt="stock street map"/>
                     </div>
-                    <p>1234 Fake Address</p>
-                </div>
-                <div className="contactModalFooter">
-                    <button className="contactModalButton">
-                        close 
-                    </button>
+                    <div className="addressNumber">
+                        <p>1234 Fake Address</p>
+                        <p>123-123-1234</p>
+                    </div>  
                 </div>
             </div>
         </div>

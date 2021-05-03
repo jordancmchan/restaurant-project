@@ -49,7 +49,9 @@ const Home = () => {
                          </div>
 
                          {showContact === true
-                         ? <ContactModal />
+                         ? <ContactModal 
+                         onClose={()=>setshowContact(false)}
+                         />
                          : null
                          }
 
