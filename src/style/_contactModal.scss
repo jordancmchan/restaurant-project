@@ -28,6 +28,9 @@
                 font-size: 1.3rem;
                 color: $gold;
                 cursor: pointer;
+                &:hover{
+              opacity: 0.6;
+          }
             }
         }
 
