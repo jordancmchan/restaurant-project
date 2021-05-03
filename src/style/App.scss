@@ -1,6 +1,7 @@
 @import "mixin";
 @import "setup";
 @import "contactModal";
+@import "galleryModal";
 
 .wrapper {
   margin-right: auto;
@@ -64,8 +65,7 @@
 
   .homeContainer,
   .menuContainer,
-  .historyContainer,
-  .galleryContainer {
+  .historyContainer{
     background-image: url(../assets/side-menu.jpg);
     background-size: contain;
     width: 100%;
@@ -367,61 +367,6 @@
         max-width: 100%;
         img {
           height: auto;
-        }
-      }
-    }
-  }
-
-  .galleryContainer {
-    padding-top: 5vh;
-    h1 {
-      font-size: 2rem;
-      color: white;
-      @include fontBaskerville;
-      text-align: center;
-      margin: 0;
-      padding-top: 5vh;
-      border-bottom: 2px solid white;
-      display: block;
-      background-image: linear-gradient(
-        to right,
-        rgb(141, 90, 2, 0.8),
-        rgb(141, 90, 2, 0.3)
-      );
-      height: 10vh;
-      border-top: solid 1px black;
-    }
-    .currentImageContainer {
-      display: flex;
-      justify-content: center;
-      max-width: 100%;
-      height: auto;
-      img {
-        width: 50%;
-        height: 475px;
-        box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
-      }
-    }
-    .imgs {
-      max-width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      row-gap: 5px;
-      column-gap: 5px;
-      background-color: black;
-      box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
-      padding: 10px 5px;
-      margin: 0 auto;
-      margin-top: 10vh;
-
-      img {
-        width: 100%;
-        height: 25vh;
-        border-radius: 10px;
-        transition-duration: 0.3s;
-
-        &:hover {
-          transform: scale(0.95);
         }
       }
     }

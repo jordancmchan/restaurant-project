@@ -6,21 +6,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHippo } from "@fortawesome/free-solid-svg-icons";
 import { faSortDown } from "@fortawesome/free-solid-svg-icons";
 import { useState } from 'react';
-import ContactModal from './ContactModal';
-
+import ContactModal from './ContactModal.js';
+import Gallery from './Gallery.js'
 
 const Home = () => {
-     const [showContact , setshowContact] = useState(false) 
+     const [showContact , setshowContact] = useState(false);
+     const [showGallery, setshowGallery] = useState(false);
 
      const handleContactClick = () => {
-          console.log('contact Clicked')
           setshowContact(true);
      }
      
      const handleGalleryClick = () => {
-          console.log('gallery Clicked')
+          setshowGallery(true);
      }
-
 
      return(
                <section className="homeContainer">
@@ -54,6 +53,15 @@ const Home = () => {
                          />
                          : null
                          }
+
+                         {showGallery === true
+                         ?<Gallery 
+                         on={()=>setshowGallery(false)}
+                         />
+                         : null
+                         }
+
+
 
 
                </section>

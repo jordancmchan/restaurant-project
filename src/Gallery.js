@@ -4,9 +4,10 @@ import galleryImage2 from "./assets/galleryImage2.jpg";
 import galleryImage3 from "./assets/galleryImage3.jpg";
 import galleryImage4 from "./assets/galleryImage4.jpg";
 import galleryImage5 from "./assets/galleryImage5.jpg";
+import {faTimes} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
-const Gallery = () => {
+const Gallery = (props) => {
 
      function galleryClick (e) {
           
@@ -23,9 +24,9 @@ const Gallery = () => {
 
   return (
     <section className="galleryContainer">
-      <h1>GALLERY</h1>
       <div className="currentImageContainer">
         <img src={galleryImage1} alt="" id="currentImage" />
+        <FontAwesomeIcon icon={faTimes} className="closeIcon" onClick={props.onClick}/>
       </div>
       <div className="imgs">
         <img src={galleryImage1} onClick = {galleryClick} alt="dining table with wine glass" />
