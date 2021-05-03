@@ -26,7 +26,7 @@ const Gallery = (props) => {
     <section className="galleryContainer">
       <div className="currentImageContainer">
         <img src={galleryImage1} alt="" id="currentImage" />
-        <FontAwesomeIcon icon={faTimes} className="closeIcon" onClick={props.onClick}/>
+        <FontAwesomeIcon icon={faTimes} className="closeIcon" onClick={props.onClose}/>
       </div>
       <div className="imgs">
         <img src={galleryImage1} onClick = {galleryClick} alt="dining table with wine glass" />

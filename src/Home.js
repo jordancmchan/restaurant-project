@@ -56,7 +56,7 @@ const Home = () => {
 
                          {showGallery === true
                          ?<Gallery 
-                         on={()=>setshowGallery(false)}
+                         onClose={()=>setshowGallery(false)}
                          />
                          : null
                          }
