@@ -72,26 +72,25 @@
   }
 
   .homeContainer {
+      height: 90vh;
+      padding-top: 10vh;
       .mainTitleContainer {
-        height: 90vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
 
         .titleImageContainer{
-          width: 150%;
-          height: auto;
+          max-width: 100%;
+          max-height: 500px;
           img{
             width: 100%;
-            height: 70vh;
+            height: 110%;
           }
         }
         .mainTitle{
           background-color: rgb(7, 52, 57, 0.7);
-          height: 70vh;
           display:flex;
           flex-direction: column;
-          justify-content: space-between;
+          height: 500px;
           .mainTitleDes{
             h1 {
               margin: 0;
@@ -101,6 +100,7 @@
               color: $gold;
               text-align: center;
             }
+
             p{
               color: white;
               font-size :1.3rem;
@@ -113,53 +113,52 @@
             }
           }
           
+          .contactGalleryContainer {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            height: 50%;
+            .galleryTitleContainer, .reservationContainer{
+              opacity: 0.7;
+              transition: 0.5s;
+              position: relative;
+              top: 3em;
+              height: 50%;
+              &:hover{  
+                opacity: 1;
+              }
+    
+              h1{
+                position: absolute;
+                @include fontBaskerville;
+                font-size: 1.5rem;
+                color: white;
+                width: 100%;
+                text-align:center;
+              }
+    
+                img {
+                  width: 100%;
+                  height: 200px;
+                }
+    
+                .shadow{
+                  width: 394px;
+                  position: relative;
+                  height: 200px;
+                  transition: 0.3s;
+                  cursor: pointer;
+                  bottom: 202px;
+                  &:hover{
+                    box-shadow: inset 0 0 0 10px $gold;
+                  }
+                
+              }
+            }
+        }
 
         }
       }
-
-      .contactGalleryContainer {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-
-        .galleryTitleContainer, .reservationContainer{
-          opacity: 0.7;
-          transition: 1s;
-          transition: 0.5s;
-
-          &:hover{
-            opacity: 1;
-          }
-          h1{
-            position: absolute;
-            @include fontBaskerville;
-            font-size: 1.5rem;
-            color: white;
-            width: 25%;
-            text-align:center;
-          }
-          img {
-            overflow: hidden;
-            object-fit: cover;
-            object-position: 10% 30%;
-            width: 100%;
-            height: 25vh;     
-          }
-        }
-
-        .shadow{
-          width: 394px;
-          position: absolute;
-          height: 25vh;
-          transition: 0.3s;
-          box-shadow: inset 0 0 0 4px,2px $gold;
-          cursor: pointer;
-          top: 54.75%;
-          
-          &:hover{
-            box-shadow: inset 0 0 0 10px $gold;
-          }
-        }
-    }
+      
   }
 
   .menuContainer {

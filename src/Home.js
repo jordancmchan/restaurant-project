@@ -35,13 +35,13 @@ const Home = () => {
                                    <div className="contactGalleryContainer" >
                                         <div className="reservationContainer">
                                              <h1>CONTACT & HOURS</h1>
-                                             <img src={reservationBanner} alt="restaurant table with wine glasses and dinner plates"/>
-                                             <div className="shadow" onClick={handleContactClick}></div>
+                                                  <img src={reservationBanner} alt="restaurant table with wine glasses and dinner plates"/>
+                                                  <div className="shadow" onClick={handleContactClick}></div>
                                         </div>
                                         <div className="galleryTitleContainer">
                                              <h1>GALLERY</h1>
-                                             <img src={galleryTitle} alt="a pair of hands kneading dough"/>
-                                             <div className="shadow" onClick = {handleGalleryClick}></div>
+                                                  <img src={galleryTitle} alt="a pair of hands kneading dough"/>
+                                                  <div className="shadow" onClick = {handleGalleryClick}></div>
                                         </div>
                                    </div>
                               </div>
