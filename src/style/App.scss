@@ -147,13 +147,13 @@
         }
 
         .shadow{
-          width: 393px;
+          width: 394px;
           position: absolute;
           height: 25vh;
           transition: 0.3s;
           box-shadow: inset 0 0 0 4px,2px $gold;
           cursor: pointer;
-          top: 452.5px;
+          top: 54.75%;
           
           &:hover{
             box-shadow: inset 0 0 0 10px $gold;
