@@ -179,5 +179,31 @@
 }
 
 @media (max-width: 480px){
+    .App{
+        .menuContainer{
+            padding-top: 25vh;
+            .kitchenBanner{
+                h1{
+                    width: 100%;
+                    text-align: center;
+                    display:block;
+                    left: 0;
+                    border: none;
+                    text-decoration: underline 2px solid $gold;
+                }
+            }
+            .wrapper{
+                max-width: 100%;
+            }
+            .entireMenuContainer{
+                display:grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 1fr auto auto;
+            }
+        }
+        .historyContainer{
+            padding-top: 80vh;
+        }
 
+    }
 }
