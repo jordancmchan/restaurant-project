@@ -1,9 +1,18 @@
 @media (max-width: 1245px){
 
     .App {
+        .homeContainer{
+            .mainTitleContainer{
+                .titleImageContainer{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
         .menuContainer{
             max-height: 140vh;
-
             .entireMenuContainer{
                 .dessertSection, .drinkSection{
                     left: 400px;
@@ -20,6 +29,16 @@
 
 @media (max-width: 1030px) {
     .App{
+
+        .homeContainer{
+            .mainTitleContainer{
+                .titleImageContainer{
+                    img{
+                        display: none;
+                    }
+                }
+            }
+        }
 
         .menuContainer{
             max-height: 140vh;
@@ -55,7 +74,7 @@
                 .titleImageContainer{
                     max-width: 100%;
                     img{
-                        width: auto;
+                        width: 100%;
                     }
                 }
             }
@@ -63,9 +82,7 @@
         .menuContainer{
             max-height: 140vh;
 
-            .wrapper{
-                max-width: 100%;
-            }
+            
 
             .entireMenuContainer{
 
@@ -96,6 +113,9 @@
     .App{
 
         .homeContainer{
+            .wrapper{
+                max-width: 100%;
+            }
 
             .mainTitleContainer{
                 flex-direction: column;
@@ -105,12 +125,27 @@
                         display: none;
                     }
                 }   
+                .mainTitle{
+                    width: 100vw;
 
+                    .contactGalleryContainer{
+                        max-width: 100%;
+
+                        .reservationContainer, .galleryTitleContainer{
+
+                            .shadow{
+                                width: 100%;
+                            }
+                        }
+
+                    }
+                }
             }
             
         }
 
         .historyContainer{
+            padding-top: 10vh;
             h1{
                 span{
                     position:static;
