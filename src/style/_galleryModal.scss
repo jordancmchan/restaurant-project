@@ -54,3 +54,17 @@
       }
     }
   }
+
+
+@media (max-width: 768px){
+  .galleryContainer{
+    .currentImageContainer{
+      img{
+        width: 80%;
+      }
+    }
+    .imgs{
+      margin-top: 0;
+    }
+  }
+}
