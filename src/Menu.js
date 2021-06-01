@@ -9,8 +9,8 @@ const Menu = () => {
           <section className ="menuContainer">
                <div className ="kitchenBanner">
                     <img src={kitchen} alt="restaurant kitchen"/>
-                    <h1>MENU</h1>
                </div>
+               <h1 className="alaCarte">à la carte</h1>
                <div className="entireMenuContainer wrapper" >
                     <div className="appetizerSection">
                          <h1>APPETIZER</h1>

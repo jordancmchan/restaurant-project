@@ -1,10 +1,9 @@
 import contactMap from './assets/contactMap.jpg'
-import {faTimes} from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 
 const ContactModal = (props) => {
+
     return(
         <div className="contactModal">
             <div className="contactModalContent">
@@ -12,7 +11,7 @@ const ContactModal = (props) => {
                     <h4 className="contactModalTitle">
                         Contact & Hours
                     </h4>
-                    <FontAwesomeIcon icon={faTimes} className="closeIcon" onClick={props.onClose}/>
+                    {/* <FontAwesomeIcon icon={faTimes} className="closeIcon" onClick={props.onClose}/> */}
                 </div>
                 <div className="contactModalBody">
                     <div className="hours">

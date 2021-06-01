@@ -6,8 +6,11 @@ import galleryImage4 from "./assets/galleryImage4.jpg";
 import galleryImage5 from "./assets/galleryImage5.jpg";
 import {faTimes} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useState } from 'react';
 
 const Gallery = (props) => {
+
+  const [showGallery, setshowGallery] = useState(false);
 
      function galleryClick (e) {
           
@@ -36,6 +39,7 @@ const Gallery = (props) => {
         <img src={galleryImage5} onClick = {galleryClick} alt="pots filled with food" />
       </div>
     </section>
+    
   );
 };
 
